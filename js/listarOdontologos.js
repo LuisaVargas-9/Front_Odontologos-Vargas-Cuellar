@@ -86,7 +86,7 @@ editForm.addEventListener("submit", function (event) {
 });
 
 // Función para eliminar un odontólogo
-deleteOdontólogo = function (id) {
+deleteOdontologo = function (id) {
   if (confirm("¿Está seguro de que desea eliminar este odontólogo?")) {
     // eliminar el odontólogo
     fetch(`${apiURL}/odontologo/eliminar/${id}`, {
@@ -105,4 +105,4 @@ deleteOdontólogo = function (id) {
 };
 
 // Llamar a la función para obtener y mostrar los odontólogos
-fetchPacientes();
+fetchOdontologos();
